@@ -4,7 +4,7 @@ const port = 80;
 
 var nodemailer = require('nodemailer');
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 
 const transporter = nodemailer.createTransport({
